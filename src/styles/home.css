@@ -1,0 +1,63 @@
+.hero-image{
+    background-image: url('../assets/home/background-home-mobile.jpg') ;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+    height: 100vh;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.title{
+    position: absolute;
+    top: 20%;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #D0D6F9;
+}
+.sub-title{
+    font-size: 6em;
+    font-family: 'Bellefair', serif;
+    color: #FFFF;
+    position: absolute;
+    top: 25%;
+}
+.info-text{
+    margin-top: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    font-size: 15px;
+    line-height: 25px;
+}
+.btn-explore{
+    position: fixed;
+    top: 70%;
+    background-color: #f2f2f2;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-explore p{
+    font-family: 'Bellefair', serif;
+    color: #0B0D17;
+    font-weight: 400;
+    font-size: 1.4em;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+}
