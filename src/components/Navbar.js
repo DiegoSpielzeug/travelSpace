@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/shared/logo.svg';
-import IconMenu from '../assets/shared/icon-hamburger.svg';
+import iconMenu from '../assets/shared/icon-hamburger.svg';
 import closeMenu from '../assets/shared/icon-close.svg';
 import { SidebarData} from '../data/SidebarData';
 import '../styles/navbar.css';
@@ -9,7 +9,6 @@ import '../styles/navbar.css';
 const Navbar = () => {
 
     const [ sidebar, setSidebar ] = useState(false);
-
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
@@ -19,8 +18,8 @@ const Navbar = () => {
                     <img src={logo}  alt={'logo'}/>
                 </Link>
 
-                <Link to="/" className="menu-bars">
-                    <img src={IconMenu} onClick={showSidebar} alt={'menu-bars'}/>
+                <Link to="#" className="menu-bars">
+                    <img src={iconMenu} onClick={showSidebar} alt={'menu-bars'}/>
                 </Link>
             </div>
 

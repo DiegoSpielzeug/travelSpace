@@ -1,0 +1,101 @@
+.destination-bg{
+    background-image: url('../assets/destination/background-destination-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 850px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.title-destination{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+.img-destination{
+    height: 10em;
+    width: 10em;
+}
+.place-arrival{
+    display: flex;
+    color: #D0D6F9;
+    
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 3em;
+    font-weight: 400;
+}
+.place-arrival p {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 2.5px solid transparent;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.place-arrival p.active{
+    color: white;
+    border-bottom: 2.5px solid white;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.destination-name{
+    color: white;
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 56PX;
+    padding-top: .3em;
+    text-transform: uppercase;
+}
+.info-text-destination{
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #D0D6F9;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
+hr{
+    color: white;
+    width: 80%;
+    height: .5px;
+    border-width: 0px;
+    background-color: #D0D6F9;
+}
+.avg-distanse{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #D0D6F9;
+    padding-top: 1.3em;
+    letter-spacing: 2px;
+    font-size: 1em;
+    text-align: center;
+}
+.km-distanse, .days-disntanse{
+    font-family: 'Bellefair', serif;
+    font-size: 1.8em;
+    color: white;
+    padding-top: .5em;
+    text-transform: uppercase;
+
+}
+.est-time{
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #D0D6F9;
+    padding-top: 1.4em;
+    letter-spacing: 2px;
+    font-size: 1em;
+    text-align: center;
+}
