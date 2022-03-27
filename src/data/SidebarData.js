@@ -15,7 +15,7 @@ export const SidebarData = [
     {
         num:'02',
         title: 'CREW',
-        path: '/destination',
+        path: '/crew',
         cName: 'nav-text',
     },
     {

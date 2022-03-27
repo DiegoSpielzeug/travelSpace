@@ -2,7 +2,10 @@
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar';
+import Destination from "./pages/Destination";
 import Home from "./pages/Home";
+import Crew from './pages/Crew';
+import Technology from "./pages/Technology";
 
 function App() {
   return (
@@ -12,10 +15,10 @@ function App() {
 
         <Switch>
           
-          <Route exact path="/destination"/>
-          <Route exact path="/crew" />
-          <Route exact path="/technology" />
-          <Route component={Home} path="/" />
+          <Route exact path="/destination" component={Destination}/>
+          <Route exact path="/crew" component={Crew}/>
+          <Route exact path="/technology" component={Technology} />
+          <Route exact path="/" component={Home} />
         </Switch>
 
       </Router>

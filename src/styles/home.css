@@ -1,36 +1,39 @@
 .hero-image{
-    background-image: url('../assets/home/background-home-mobile.jpg') ;
+    background-image: url('../assets//home/background-home-mobile.jpg') ;
     background-position: center;
     background-size: cover;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: -10;
-    height: 100vh;
+    height: 100%;
+    min-height: 850px;
 }
 .home-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    position: relative;
+    height: 100%;
+}
+.home-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .title{
-    position: absolute;
-    top: 20%;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 300;
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color: #D0D6F9;
+    margin-bottom: 5%;
 }
 .sub-title{
     font-size: 6em;
     font-family: 'Bellefair', serif;
     color: #FFFF;
-    position: absolute;
-    top: 25%;
 }
 .info-text{
     margin-top: 3em;
@@ -43,8 +46,6 @@
     line-height: 25px;
 }
 .btn-explore{
-    position: fixed;
-    top: 70%;
     background-color: #f2f2f2;
     height: 10em;
     width: 10em;
@@ -52,6 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 6%;
 }
 .btn-explore p{
     font-family: 'Bellefair', serif;
@@ -60,4 +62,57 @@
     font-size: 1.4em;
     letter-spacing: 1.25px;
     text-transform: uppercase;
+}
+@media (min-width: 768px){
+    .hero-image{
+        min-height: 900px;
+        background-image: url('../assets/home/background-home-tablet.jpg') ;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .sub-title{
+        font-size: 150px;
+    }
+    .info-text{
+        margin-left: 150px;
+        margin-right: 150px;
+        font-size: 16px;
+        margin-top: 24px;
+    }
+}
+@media (min-width: 1260px){
+    .hero-image{
+        background-image: url('../assets//home/background-home-desktop.jpg') ;
+        min-height: 900px;
+        background-position: center;
+    }
+    .home-content{
+        flex-direction: row;
+    }
+    .home-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        transform: translateX(-10rem);
+    }
+    .home-btn{
+        transform: translateY(7rem);
+    }
+    .btn-explore{
+        margin: auto;
+        height: 15rem;
+        width: 15rem;
+    }
+    .btn-explore p{
+        font-size: 2.4rem;
+    }
+    .info-text{
+        font-size: 18px;
+        margin-left: 55px;
+        margin-right: 55px;
+        text-align: justify;
+    }
 }
