@@ -1,39 +1,48 @@
 import React  from 'react';
 import '../styles/destination.css';
-import logo from '../assets/destination/image-moon.png';
+
 
 const InfDestination = ({handleClick, satelite}) => {
 
-    console.log(satelite)
+    const uri = satelite.images.png;
+    const uri2 = uri.slice(22)
+
     return (
         <div className="info-container">
-
-            <h3 className="title-destination"><span>01</span> PICK YOUR DESTINATION</h3>
-
-            <img src={logo} alt="moons" className="img-destination" />
-
-            <div className="place-arrival">
-                <p className={satelite.name  === 'Moon' && 'active' } onClick={() => handleClick('Moon')}>Moon</p>
-                <p className={satelite.name  === 'Mars' && 'active' } onClick={() => handleClick('Mars')}>Mars</p>
-                <p className={satelite.name  === 'Europa' && 'active' } onClick={() => handleClick('Europa')}>Europa</p>
-                <p className={satelite.name  === 'Titan' && 'active' } onClick={() => handleClick('Titan')}>Titan</p>
+           
+            <div className='info-picture-satelite'> 
+                <img src={require(`../assets/destination/${uri2}`).default} alt="moons" className="img-destination" /> 
             </div>
 
-            <h1 className="destination-name">{satelite.name}</h1>
+            <div className='info-satelite'>
+                    <div className="place-arrival">
+                        <p className={satelite.name  === 'Moon' ? 'active' : undefined } onClick={() => handleClick('Moon')}>Moon</p>
+                        <p className={satelite.name  === 'Mars' ? 'active' : undefined } onClick={() => handleClick('Mars')}>Mars</p>
+                        <p className={satelite.name  === 'Europa' ? 'active' : undefined } onClick={() => handleClick('Europa')}>Europa</p>
+                        <p className={satelite.name  === 'Titan' ? 'active' : undefined } onClick={() => handleClick('Titan')}>Titan</p>
+                    </div>
 
-            <p className="info-text-destination">
-               {satelite.description}
-            </p>
+                    <h1 className="destination-name">{satelite.name}</h1>
 
-            <hr/>
+                    <p className="info-text-destination">
+                    {satelite.description}
+                    </p>
 
-            <p className="avg-distanse">AVG. DISTANCE</p>
+                    <hr/>
 
-            <p className="km-distanse">{satelite.distance}</p>
+                <div className='extra-info'>
+                        <div className='distance'>
+                            <p className="avg-distance">AVG. DISTANCE</p>
+                            <p className="km-distance">{satelite.distance}</p>
+                        </div>
+                        <div className='time'>
+                            <p className="est-time">EST. TRAVEL TIME</p>
+                            <p className="days-disntance">{satelite.travel}</p>
+                        </div>
+                </div>
+                
+            </div>
 
-            <p className="est-time">EST. TRAVEL TIME</p>
-
-            <p className="days-disntanse">{satelite.travel}</p>
         </div>
     );
 };

@@ -1,0 +1,199 @@
+.crew-bg{
+    background-image: url('../assets/crew/background-crew-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    min-height: 850px;
+}
+.info-container-crew{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.crew-info-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.crew-title{
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+.crew-title span{
+        margin-right: 8px;
+        color: white;
+        opacity: .25;
+}
+.crew-picture-frame{
+    height: 223px;
+    width: 327px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.479);
+    display: flex;
+    justify-content: center;
+}
+.crew-picture-frame img{
+    height: 223px;
+    object-fit: cover;
+}
+.crew-button{
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    margin-top: 2em;
+}
+.crew-button p{
+    background-color: grey;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.crew-button p.active{
+    background-color: white;
+}
+.crew-role{
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    opacity: .5;
+    padding-top: 1.5em;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+.crew-name{
+    font-family: 'Bellefair', serif;
+    font-size: 1.5em;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.crew-bio{
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+@media (min-width: 768px){
+    .crew-bg{
+        height: 100%;
+        min-height: 1000px;
+    }
+    .info-container-crew{
+        height: auto;
+    }
+    .crew-container{
+        height: 100%;
+        position: relative;
+    }
+    .crew-title{
+        padding-top: 136px;
+        padding-left: 39px;
+        padding-bottom: 0px;
+        padding-bottom: 5%;
+    }
+    .crew-picture-frame{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .crew-picture-frame img{
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
+    }
+    .crew-button{
+        position: absolute;
+        top: 45%;
+        margin-top: 0;
+    }
+    .crew-button p{
+        height: 12px;
+        width:12px;
+    }
+    .crew-role{
+        font-size: 24px;
+        padding-top: 0;
+    }
+    .crew-name{
+        font-size: 43px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .crew-bio{
+        font-size: 16px;
+        width: 592px;
+        height: 84px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width: 768px) and (min-height: 1001px){
+    .crew-picture-frame img{
+        width: 525px;
+        height: 525px;
+        object-fit: contain;
+    }
+}
+@media (min-width: 1260px){
+    .info-container-crew{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .crew-title{
+        font-size: 28px;
+    }
+    .crew-info-text{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: flex-start;
+        transform: translateY(-43px);
+    }
+    .crew-bio{
+        text-align: left;
+        font-size: 18px;
+    }
+    .crew-picture-frame{
+        position: inherit;
+    }
+    .crew-role{
+        font-size: 32px;
+    }
+    .crew-name{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 56px;
+    }
+    .crew-button{
+        top: 112%;
+    }
+    .crew-picture-frame{
+        height: 659px;
+        width: 569px;
+    }
+    .crew-picture-frame img{
+        height: 569px;
+        width: 569px;
+    }
+}

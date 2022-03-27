@@ -4,6 +4,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Destination from "./pages/Destination";
 import Home from "./pages/Home";
+import Crew from './pages/Crew';
+import Technology from "./pages/Technology";
 
 function App() {
   return (
@@ -14,9 +16,9 @@ function App() {
         <Switch>
           
           <Route exact path="/destination" component={Destination}/>
-          <Route exact path="/crew" />
-          <Route exact path="/technology" />
-          <Route path="/" component={Home} />
+          <Route exact path="/crew" component={Crew}/>
+          <Route exact path="/technology" component={Technology} />
+          <Route exact path="/" component={Home} />
         </Switch>
 
       </Router>

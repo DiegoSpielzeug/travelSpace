@@ -10,6 +10,7 @@ font-family: 'Bellefair', serif; */
   margin: 0;
   font-family: 'Poppins';
   box-sizing: border-box;
+  max-width: 1738px;
 }
 li{
   list-style: none;

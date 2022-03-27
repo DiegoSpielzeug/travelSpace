@@ -15,6 +15,7 @@ const Destination = () => {
     
     return (
         <div className='destination-bg'>
+            <h3 className="title-destination"><span>01</span> PICK YOUR DESTINATION</h3>
             <InfDestination handleClick={handleClick} satelite={satelite} />
         </div>
     );
